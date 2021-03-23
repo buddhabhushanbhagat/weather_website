@@ -60,14 +60,14 @@ app.get("/weather", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About me",
-    name: "Bbhushan",
+    name: "Buddhabhushan Bhagat",
     age: 23,
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
-    name: "Bbhushan",
+    name: "Buddhabhushan Bhagat",
     title: "Help",
   });
 });
@@ -75,16 +75,16 @@ app.get("/help", (req, res) => {
 app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Bbhushan",
-    errorMsg: "help artical not found",
+    name: "Buddhabhushan Bhagat",
+    error: "help artical not found",
   });
 });
 
 app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
-    name: "Bbhushan",
-    errorMsg: "Invalid url or route",
+    name: "Buddhabhushan Bhagat",
+    error: "Invalid url or route",
   });
 });
 

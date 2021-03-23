@@ -53,3 +53,8 @@ button {
   background-color: #888888;
   color: white;
 }
+
+#about-content {
+  font-family: Arial;
+  font-style: italic;
+}
